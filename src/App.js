@@ -32,7 +32,7 @@ function App() {
           value={sym}
           onChange={Event => setSymbol(Event.target.value)}
           onKeyPress={searchSymbol}
-          placeholder = "Stock Symbol(AAPL, TLSA)"
+          placeholder = "Stock Symbol (AAPL)"
           type="text"/>
       </div>
 
