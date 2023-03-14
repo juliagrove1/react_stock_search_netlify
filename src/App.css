@@ -1,38 +1,118 @@
-.App {
+body {
+  background-color: #d4d4d5;
+  max-width: 500px;
+  margin: 20px auto;
+}
+.search {
   text-align: center;
+  padding: 1rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app input {
+  color:rgb(109, 109, 109);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid white; 
+  background: rgb(255,255,255,0.1);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.welcome {
+  text-align: center;
+  color: white; 
+  font-family: 'Josefin Sans' , sans-serif; 
+  font-size:30px;
+  text-align: left;
+  padding:10px;
+  margin:15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.welcome p {
+  text-align:center;
+}
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  background-color: rgb(104, 103, 103);
+  border-radius: 10px;
+  margin:70px;
+  box-shadow: 3px 3px 3px rgb(73, 73, 73);
+}
+.topLeft{
+  margin:0 px;
+ }
+.topRight {
+  padding:10px;
+  padding-right:0px;
+  margin:0px;
+
+}
+.symbol {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  color: white; 
+  font-family: 'Josefin Sans' , sans-serif; 
+  font-size:25px;
+  text-align: left;
+  padding-top:1px;
+  padding-bottom: 0px;
+  margin:20px;
+  text-decoration: underline;
 }
 
-.App-link {
-  color: #61dafb;
+.qAndDaily {
+  padding:10px;
+  margin: 0px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.qAndDaily h1 {
+  padding:0px;
+  margin:0px;
+}
+.quote h1{
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  color: white; 
+  font-family: 'Josefin Sans' , sans-serif; 
+  font-size:40px;
+  margin:10px;
+  text-align: left;
+  line-height: 7px;
+}
+.priceChange h1{
+  margin:10px;
+  text-align: left;
+  font-family: 'Josefin Sans' ,sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+}
+.negChange h1 {
+  color: rgba(207, 24, 24, 0.877);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.posChange h1 {
+  color: #3CB043;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.openClose {
+  margin-top:20px;
+  padding: 10px;
+}
+.openClose h4{
+  color:rgba(255, 255, 255, 0.8);
+  font-family: 'DM Sans', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  margin:0px;
+  padding:0px;
+  font-size: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.highLow {
+  margin-top:0px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.highLow h4 {
+  color:rgba(255, 255, 255, 0.8);
+  font-family:'DM Sans';
+  text-align: left;
+  margin:0px;
+  padding:0px;
+  font-size: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
