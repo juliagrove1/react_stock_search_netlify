@@ -1,6 +1,6 @@
 body {
   background-color: #d4d4d5;
-  max-width: 500px;
+  max-width: 540px;
   margin: 20px auto;
 }
 .search {
@@ -31,18 +31,18 @@ body {
 .container {
   display: flex;
   text-align: center;
-  background-color: rgb(104, 103, 103);
+  background-color: rgb(129, 129, 129);
   border-radius: 10px;
   margin:70px;
   box-shadow: 3px 3px 3px rgb(73, 73, 73);
 }
 .topLeft{
   margin:0 px;
- }
+}
 .topRight {
   padding:10px;
   padding-right:0px;
-  margin:0px;
+  margin:10px;
 
 }
 .symbol {
@@ -51,7 +51,7 @@ body {
   font-family: 'Josefin Sans' , sans-serif; 
   font-size:25px;
   text-align: left;
-  padding-top:1px;
+  padding-top:0px;
   padding-bottom: 0px;
   margin:20px;
   text-decoration: underline;
@@ -82,7 +82,7 @@ body {
   line-height: 20px;
 }
 .negChange h1 {
-  color: rgba(158, 22, 22);
+  color: rgba(207, 24, 24, 0.877);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 .posChange h1 {
@@ -115,4 +115,17 @@ body {
   padding:0px;
   font-size: 10px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.search button {
+  border-radius:8px;
+  margin:7px;
+  font-size:15px;
+  border:solid 1px white;
+  color: grey;
+}
+
+.news {
+  color:white;
+  text-decoration: underline;
+  
 }
