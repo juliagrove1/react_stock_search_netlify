@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import axios from 'axios'
 import './App.css';
 
@@ -46,7 +46,7 @@ function App() {
         .catch((err) => {
           console.error(err);
         })
-    }, []);
+    });
   const fetchCompanyNews = async () => {
     return axios.get(SYM_NEWS)
       .then(response => {
