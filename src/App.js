@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react'
+import React, { useEffect } from 'react'
 import axios from 'axios'
 import './App.css';
 
@@ -117,12 +117,12 @@ function App() {
           <div className="newsheadline">
           <p>Headlines:</p>
              <div className="symbolnews1">
-                <img src={symNewsImg}></img>
+                <img src={symNewsImg} alt=" "></img>
                   <a href={symNewsUrl}>{symNews}</a>
              </div>
 
              <div className="symbolnews1">
-                <img src={symNewsImg2}></img>
+                <img src={symNewsImg2} alt=" "></img>
                   <a href={symNewsUrl2}>{symNews2}</a>
              </div>
 
