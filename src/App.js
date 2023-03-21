@@ -28,7 +28,7 @@ function App() {
   const NEWS_URL = `https://finnhub.io/api/v1/news?category=general&token=cg781v1r01qus5fl0orgcg781v1r01qus5fl0os0`
   const SYM_NEWS = `https://finnhub.io/api/v1/company-news?symbol=${sym}&from=2023-01-01&to=2023-03-19&token=cg781v1r01qus5fl0orgcg781v1r01qus5fl0os0`
 
-    const fetchNewsData = useCallback(() => {
+    const fetchNewsData = useCallback((NEWS_URL) => {
       return axios.get(NEWS_URL)
         .then(response => {
           setImg1(response.data[0].image)
