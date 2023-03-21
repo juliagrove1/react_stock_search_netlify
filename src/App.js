@@ -28,25 +28,28 @@ function App() {
   const NEWS_URL = `https://finnhub.io/api/v1/news?category=general&token=cg781v1r01qus5fl0orgcg781v1r01qus5fl0os0`
   const SYM_NEWS = `https://finnhub.io/api/v1/company-news?symbol=${sym}&from=2023-01-01&to=2023-03-19&token=cg781v1r01qus5fl0orgcg781v1r01qus5fl0os0`
 
-  const fetchNewsData = async () => {
-    return axios.get(NEWS_URL)
-      .then(response => {
-        setImg1(response.data[0].image)
-        setImg2(response.data[1].image)
-        setImg3(response.data[2].image)
-        setNewsUrl(response.data[0].url)
-        setNewsUrl2(response.data[1].url)
-        setNewsUrl3(response.data[2].url)
-        setNews(response.data)
-        setNews2(response.data[1].headline)
-        setNews3(response.data[2].headline)
-        console.log(response.data[0].headline)
-        return response.data[0].headline;
-      })
-      .catch((err) => {
-        console.error(err);
-      })
-  }
+  
+  useEffect(() => {
+    const fetchNewsData = async () => {
+      return axios.get(NEWS_URL)
+        .then(response => {
+          setImg1(response.data[0].image)
+          setImg2(response.data[1].image)
+          setImg3(response.data[2].image)
+          setNewsUrl(response.data[0].url)
+          setNewsUrl2(response.data[1].url)
+          setNewsUrl3(response.data[2].url)
+          setNews(response.data)
+          setNews2(response.data[1].headline)
+          setNews3(response.data[2].headline)
+          console.log(response.data[0].headline)
+          return response.data[0].headline;
+        })
+        .catch((err) => {
+          console.error(err);
+        })
+    }
+  }, [])
   const fetchCompanyNews = async () => {
     return axios.get(SYM_NEWS)
       .then(response => {
@@ -66,12 +69,12 @@ function App() {
       })
   }
   // use effect loads on page load 
-  // empty array only reveals one piece of data?
+  /*
   useEffect(() => {
     fetchNewsData().then(result => {
       setNews(result || '');
     })
-  }, [fetchNewsData])
+  }, [fetchNewsData])*/
 
   const handleSubmit=(e)=> {
     e.preventDefault();
