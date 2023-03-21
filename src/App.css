@@ -2,6 +2,7 @@ body {
   background-color: #d4d4d5;
   max-width: 640px;
   margin: 10px auto;
+  font-size: 0px;
 }
 .search {
   text-align: center;
