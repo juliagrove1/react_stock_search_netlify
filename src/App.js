@@ -49,7 +49,7 @@ function App() {
           console.error(err);
         })
     }
-  }, [])
+  }
   const fetchCompanyNews = async () => {
     return axios.get(SYM_NEWS)
       .then(response => {
@@ -69,12 +69,12 @@ function App() {
       })
   }
   // use effect loads on page load 
-  /*
+  
   useEffect(() => {
     fetchNewsData().then(result => {
       setNews(result || '');
     })
-  }, [fetchNewsData])*/
+  }, [])
 
   const handleSubmit=(e)=> {
     e.preventDefault();
