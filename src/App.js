@@ -108,12 +108,12 @@ function App() {
           <p className="header">Market News</p>
               <div className="newslinks">
                 <div className = "article1">
-                  <img src={Img1}></img>
+                  <img src={Img1} alt=" "></img>
                   <a href={newsUrl}>{news}</a>
                 </div>
 
                 <div className = "article2">
-                  <img src={Img2}></img>
+                  <img src={Img2} alt=" "></img>
                   <a href={newsUrl2}>{news2}</a>
                 </div>
 
@@ -170,12 +170,12 @@ function App() {
           <div className="newsheadline">
           <p>Headlines:</p>
              <div className="symbolnews1">
-                <img src={symNewsImg}></img>
+                <img src={symNewsImg} alt=" "></img>
                   <a href={symNewsUrl}>{symNews}</a>
              </div>
 
              <div className="symbolnews1">
-                <img src={symNewsImg2}></img>
+                <img src={symNewsImg2} alt=" "></img>
                   <a href={symNewsUrl2}>{symNews2}</a>
              </div>
 
