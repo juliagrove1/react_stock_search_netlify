@@ -46,7 +46,7 @@ function App() {
       .catch((err) => {
         console.error(err);
       })
-  })
+  }, [fetchNewsData])
   const fetchCompanyNews = async () => {
     return axios.get(SYM_NEWS)
       .then(response => {
@@ -87,7 +87,6 @@ function App() {
   return (
     
     <div className="app">
-        {NEWS_URL}
       <style>
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Josefin+Sans:wght@500;600&family=Poppins:wght@200&display=swap');
       </style>
