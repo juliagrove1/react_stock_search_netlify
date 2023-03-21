@@ -71,7 +71,7 @@ function App() {
     fetchNewsData().then(result => {
       setNews(result || '');
     })
-  }, [])
+  }, [result])
 
   const handleSubmit=(e)=> {
     e.preventDefault();
