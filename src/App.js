@@ -46,7 +46,7 @@ function App() {
         .catch((err) => {
           console.error(err);
         })
-    });
+    }, []);
   const fetchCompanyNews = async () => {
     return axios.get(SYM_NEWS)
       .then(response => {
