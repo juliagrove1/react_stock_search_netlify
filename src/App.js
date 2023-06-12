@@ -16,7 +16,7 @@ function App() {
   const [symNewsUrl2, setSymNewsUrl2] = useState([])
 
   const URL = `https://finnhub.io/api/v1/quote?symbol=${sym}&token=cg781v1r01qus5fl0orgcg781v1r01qus5fl0os0`
-  const SYM_NEWS = `https://finnhub.io/api/v1/company-news?symbol=${sym}&from=2023-03-01&to=2023-05-30&token=cg781v1r01qus5fl0orgcg781v1r01qus5fl0os0`
+  const SYM_NEWS = `https://finnhub.io/api/v1/company-news?symbol=${sym}&from=2023-05-01&to=2023-07-30&token=cg781v1r01qus5fl0orgcg781v1r01qus5fl0os0`
 
   
   const fetchCompanyNews = async () => {
